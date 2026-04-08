@@ -1,0 +1,4 @@
+runtime: python39
+
+# GAE looks for an &#39;app&#39; object in main.py to start the server
+entrypoint: gunicorn -b :$PORT main:app
