@@ -2,7 +2,7 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-@app.route(&#39;/&#39;)
+@app.route('/')
 def home():
 # render_template automatically looks in the /templates folder
 return render_template(&#39;index.html&#39;, title=&quot;Home Page&quot;)
